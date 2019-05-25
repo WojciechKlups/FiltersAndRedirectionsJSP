@@ -11,6 +11,6 @@
     <title>Admin panel</title>
 </head>
 <body>
-
+<a href="/logoutServlet">Wyloguj</a>
 </body>
 </html>
