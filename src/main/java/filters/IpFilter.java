@@ -21,9 +21,11 @@ public class IpFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) req;
         String remoteAddr = request.getRemoteAddr();
         if (remoteAddr.matches(ipPattern)) {
+            System.out.println("Adres IP jest poprawny");
             chain.doFilter(req, resp);
         } else {
             HttpServletResponse response = (HttpServletResponse) resp;
+            System.out.println("Adres IP niepoprawny");
             response.sendError(403);
         }
     }
