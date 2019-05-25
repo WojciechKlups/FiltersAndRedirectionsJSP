@@ -14,7 +14,7 @@ public class AdminServlet extends HttpServlet {
 
         String username = request.getParameter("username");
         System.out.println("AdminServlet POST: " + username);
-        response.sendRedirect("loginServlet");
+        request.getRequestDispatcher("/loginServlet").forward(request, response);
     }
 
 }
