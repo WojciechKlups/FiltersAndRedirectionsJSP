@@ -8,8 +8,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(filterName = "IpFilter", urlPatterns = "/*",
+@WebFilter(filterName = "IpFilter", urlPatterns = "/asfouhasojfdhas",
 initParams = @WebInitParam(name="ipPattern", value = "192\\.168\\.100\\.[0-9]{1,3}"))
+
 public class IpFilter implements Filter {
 
     String ipPattern;

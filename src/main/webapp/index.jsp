@@ -8,14 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Ciasteczka</title>
 </head>
 <body>
-<h1>LOL</h1>
-<h2>Zaloguj się do panelu administracyjnego</h2>
-<form action="adminServlet" method="post">
-    <input type="text" name="username">
-    <input type="submit" value="zaloguj">
-</form>
+
+<h1>Ciasteczka</h1>
+<a href="coockieServlet?cookie=print">Wyświetl wszystkie dostępne ciasteczka</a><br>
+<a href="coockieServlet?cookie=create">Dodaj nowe ciasteczko</a><br>
+<a href="coockieServlet?cookie=remove">Usuń wszystkie ciasteczka</a><br>
+
 </body>
 </html>
